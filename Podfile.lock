@@ -1,0 +1,28 @@
+PODS:
+  - ffmpeg-kit-ios-full (4.5.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - SDL2 (3.2.0)
+
+DEPENDENCIES:
+  - ffmpeg-kit-ios-full (~> 4.5.1)
+  - Masonry
+  - MBProgressHUD
+  - SDL2 (~> 3.2.0)
+
+SPEC REPOS:
+  trunk:
+    - ffmpeg-kit-ios-full
+    - Masonry
+    - MBProgressHUD
+    - SDL2
+
+SPEC CHECKSUMS:
+  ffmpeg-kit-ios-full: 1e918caa885a00501ec1606c68a874d07d681705
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SDL2: 705c9e14652fb1c86de8fb4e56c2c958402bc748
+
+PODFILE CHECKSUM: 43dbefa8ade96cc070b7e250f468e67d4447f18d
+
+COCOAPODS: 1.11.3

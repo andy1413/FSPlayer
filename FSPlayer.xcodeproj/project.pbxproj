@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200F41272887A280000CB2AF /* in.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 200F41262887A280000CB2AF /* in.mp4 */; };
+		20538C4628955D410004BA2E /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20538C4528955D410004BA2E /* GameController.framework */; };
+		20538C4828955D680004BA2E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20538C4728955D680004BA2E /* CoreMotion.framework */; };
+		20538C4A28955DA40004BA2E /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20538C4928955DA40004BA2E /* CoreHaptics.framework */; };
+		20538C52289566F70004BA2E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20538C51289566F70004BA2E /* libz.tbd */; };
+		20538C54289567000004BA2E /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20538C53289567000004BA2E /* libbz2.tbd */; };
+		20538C56289567070004BA2E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20538C55289567070004BA2E /* libiconv.tbd */; };
+		20C021C5289C0AE90083FF51 /* OCPlayerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20C021BF289C0AE90083FF51 /* OCPlayerManager.mm */; };
+		20C021C6289C0AE90083FF51 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C021C1289C0AE90083FF51 /* VideoPlayerView.swift */; };
+		20C021C7289C0AE90083FF51 /* VideoPlayerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C021C2289C0AE90083FF51 /* VideoPlayerBridge.swift */; };
+		20C021C8289C0AE90083FF51 /* VideoPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C021C4289C0AE90083FF51 /* VideoPlayerModel.swift */; };
+		20C021CA289C0B2A0083FF51 /* SwiftUIStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C021C9289C0B2A0083FF51 /* SwiftUIStyle.swift */; };
+		20FA0D0D2884F4720031CE2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0D0C2884F4720031CE2D /* AppDelegate.m */; };
+		20FA0D182884F4730031CE2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20FA0D172884F4730031CE2D /* Assets.xcassets */; };
+		20FA0D1B2884F4730031CE2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FA0D192884F4730031CE2D /* LaunchScreen.storyboard */; };
+		20FA0D1E2884F4730031CE2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0D1D2884F4730031CE2D /* main.m */; };
+		20FA0D2D2884F4860031CE2D /* condmutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0D252884F4860031CE2D /* condmutex.cpp */; };
+		20FA0D2E2884F4860031CE2D /* videoplayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0D262884F4860031CE2D /* videoplayer.cpp */; };
+		20FA0D2F2884F4860031CE2D /* decode_video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0D272884F4860031CE2D /* decode_video.cpp */; };
+		20FA0D302884F4860031CE2D /* videoplayer_video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0D292884F4860031CE2D /* videoplayer_video.cpp */; };
+		20FA0D312884F4860031CE2D /* videoplayer_audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0D2A2884F4860031CE2D /* videoplayer_audio.cpp */; };
+		A9F5C79448A0CC41285389D4 /* Pods_FSPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7EF8DA2FFB5D6E36189C98 /* Pods_FSPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20538C50289564980004BA2E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E7EF8DA2FFB5D6E36189C98 /* Pods_FSPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6A1CFF7A92B17032FC8FED /* Pods-FSPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSPlayer.release.xcconfig"; path = "Target Support Files/Pods-FSPlayer/Pods-FSPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		200F41262887A280000CB2AF /* in.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = in.mp4; sourceTree = "<group>"; };
+		20538C4528955D410004BA2E /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		20538C4728955D680004BA2E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		20538C4928955DA40004BA2E /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
+		20538C51289566F70004BA2E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		20538C53289567000004BA2E /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		20538C55289567070004BA2E /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		20538C572896C2DF0004BA2E /* FSPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FSPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		20C021BE289C0AE90083FF51 /* OCPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPlayerManager.h; sourceTree = "<group>"; };
+		20C021BF289C0AE90083FF51 /* OCPlayerManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCPlayerManager.mm; sourceTree = "<group>"; };
+		20C021C1289C0AE90083FF51 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		20C021C2289C0AE90083FF51 /* VideoPlayerBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerBridge.swift; sourceTree = "<group>"; };
+		20C021C4289C0AE90083FF51 /* VideoPlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerModel.swift; sourceTree = "<group>"; };
+		20C021C9289C0B2A0083FF51 /* SwiftUIStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStyle.swift; sourceTree = "<group>"; };
+		20FA0D082884F4720031CE2D /* FSPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FA0D0B2884F4720031CE2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20FA0D0C2884F4720031CE2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20FA0D172884F4730031CE2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20FA0D1A2884F4730031CE2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20FA0D1C2884F4730031CE2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20FA0D1D2884F4730031CE2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20FA0D252884F4860031CE2D /* condmutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = condmutex.cpp; sourceTree = "<group>"; };
+		20FA0D262884F4860031CE2D /* videoplayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = videoplayer.cpp; sourceTree = "<group>"; };
+		20FA0D272884F4860031CE2D /* decode_video.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = decode_video.cpp; sourceTree = "<group>"; };
+		20FA0D282884F4860031CE2D /* condmutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = condmutex.h; sourceTree = "<group>"; };
+		20FA0D292884F4860031CE2D /* videoplayer_video.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = videoplayer_video.cpp; sourceTree = "<group>"; };
+		20FA0D2A2884F4860031CE2D /* videoplayer_audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = videoplayer_audio.cpp; sourceTree = "<group>"; };
+		20FA0D2B2884F4860031CE2D /* videoplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoplayer.h; sourceTree = "<group>"; };
+		20FA0D2C2884F4860031CE2D /* decode_video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode_video.h; sourceTree = "<group>"; };
+		D05DF613EFA35D0B57B78A8F /* Pods-FSPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSPlayer.debug.xcconfig"; path = "Target Support Files/Pods-FSPlayer/Pods-FSPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20FA0D052884F4720031CE2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20538C56289567070004BA2E /* libiconv.tbd in Frameworks */,
+				20538C54289567000004BA2E /* libbz2.tbd in Frameworks */,
+				20538C52289566F70004BA2E /* libz.tbd in Frameworks */,
+				20538C4A28955DA40004BA2E /* CoreHaptics.framework in Frameworks */,
+				20538C4828955D680004BA2E /* CoreMotion.framework in Frameworks */,
+				20538C4628955D410004BA2E /* GameController.framework in Frameworks */,
+				A9F5C79448A0CC41285389D4 /* Pods_FSPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20C021BD289C0AE90083FF51 /* PlayerManager */ = {
+			isa = PBXGroup;
+			children = (
+				20C021BE289C0AE90083FF51 /* OCPlayerManager.h */,
+				20C021BF289C0AE90083FF51 /* OCPlayerManager.mm */,
+			);
+			path = PlayerManager;
+			sourceTree = "<group>";
+		};
+		20C021C0289C0AE90083FF51 /* VideoPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				20C021C1289C0AE90083FF51 /* VideoPlayerView.swift */,
+				20C021C2289C0AE90083FF51 /* VideoPlayerBridge.swift */,
+			);
+			path = VideoPlayerView;
+			sourceTree = "<group>";
+		};
+		20C021C3289C0AE90083FF51 /* PlayerModel */ = {
+			isa = PBXGroup;
+			children = (
+				20C021C4289C0AE90083FF51 /* VideoPlayerModel.swift */,
+			);
+			path = PlayerModel;
+			sourceTree = "<group>";
+		};
+		20C021CB289C0B2F0083FF51 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				20C021C9289C0B2A0083FF51 /* SwiftUIStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		20FA0CFF2884F4720031CE2D = {
+			isa = PBXGroup;
+			children = (
+				20FA0D0A2884F4720031CE2D /* FSPlayer */,
+				20FA0D092884F4720031CE2D /* Products */,
+				F86A2ABEA41EB30EBDB9C3A7 /* Pods */,
+				79850A491BA620FC022A83D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20FA0D092884F4720031CE2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20FA0D082884F4720031CE2D /* FSPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20FA0D0A2884F4720031CE2D /* FSPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				20FA0D0B2884F4720031CE2D /* AppDelegate.h */,
+				20FA0D0C2884F4720031CE2D /* AppDelegate.m */,
+				20C021CB289C0B2F0083FF51 /* Style */,
+				20C021BD289C0AE90083FF51 /* PlayerManager */,
+				20C021C3289C0AE90083FF51 /* PlayerModel */,
+				20C021C0289C0AE90083FF51 /* VideoPlayerView */,
+				20FA0D242884F4860031CE2D /* FSPlayer_C++ */,
+				20FA0D172884F4730031CE2D /* Assets.xcassets */,
+				20538C572896C2DF0004BA2E /* FSPlayer-Bridging-Header.h */,
+				20FA0D192884F4730031CE2D /* LaunchScreen.storyboard */,
+				20FA0D1C2884F4730031CE2D /* Info.plist */,
+				20FA0D1D2884F4730031CE2D /* main.m */,
+				200F41262887A280000CB2AF /* in.mp4 */,
+			);
+			path = FSPlayer;
+			sourceTree = "<group>";
+		};
+		20FA0D242884F4860031CE2D /* FSPlayer_C++ */ = {
+			isa = PBXGroup;
+			children = (
+				20FA0D252884F4860031CE2D /* condmutex.cpp */,
+				20FA0D262884F4860031CE2D /* videoplayer.cpp */,
+				20FA0D272884F4860031CE2D /* decode_video.cpp */,
+				20FA0D282884F4860031CE2D /* condmutex.h */,
+				20FA0D292884F4860031CE2D /* videoplayer_video.cpp */,
+				20FA0D2A2884F4860031CE2D /* videoplayer_audio.cpp */,
+				20FA0D2B2884F4860031CE2D /* videoplayer.h */,
+				20FA0D2C2884F4860031CE2D /* decode_video.h */,
+			);
+			path = "FSPlayer_C++";
+			sourceTree = "<group>";
+		};
+		79850A491BA620FC022A83D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20538C55289567070004BA2E /* libiconv.tbd */,
+				20538C53289567000004BA2E /* libbz2.tbd */,
+				20538C51289566F70004BA2E /* libz.tbd */,
+				20538C4928955DA40004BA2E /* CoreHaptics.framework */,
+				20538C4728955D680004BA2E /* CoreMotion.framework */,
+				20538C4528955D410004BA2E /* GameController.framework */,
+				0E7EF8DA2FFB5D6E36189C98 /* Pods_FSPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F86A2ABEA41EB30EBDB9C3A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D05DF613EFA35D0B57B78A8F /* Pods-FSPlayer.debug.xcconfig */,
+				1D6A1CFF7A92B17032FC8FED /* Pods-FSPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20FA0D072884F4720031CE2D /* FSPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20FA0D212884F4730031CE2D /* Build configuration list for PBXNativeTarget "FSPlayer" */;
+			buildPhases = (
+				00E23C5D8E4E8FEDFC65B12E /* [CP] Check Pods Manifest.lock */,
+				20FA0D042884F4720031CE2D /* Sources */,
+				20FA0D052884F4720031CE2D /* Frameworks */,
+				20FA0D062884F4720031CE2D /* Resources */,
+				9BF6177D9E75610D6008E08E /* [CP] Embed Pods Frameworks */,
+				20538C50289564980004BA2E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSPlayer;
+			productName = FSPlayer;
+			productReference = 20FA0D082884F4720031CE2D /* FSPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20FA0D002884F4720031CE2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					20FA0D072884F4720031CE2D = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = 20FA0D032884F4720031CE2D /* Build configuration list for PBXProject "FSPlayer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20FA0CFF2884F4720031CE2D;
+			productRefGroup = 20FA0D092884F4720031CE2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20FA0D072884F4720031CE2D /* FSPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20FA0D062884F4720031CE2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200F41272887A280000CB2AF /* in.mp4 in Resources */,
+				20FA0D1B2884F4730031CE2D /* LaunchScreen.storyboard in Resources */,
+				20FA0D182884F4730031CE2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E23C5D8E4E8FEDFC65B12E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BF6177D9E75610D6008E08E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSPlayer/Pods-FSPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSPlayer/Pods-FSPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSPlayer/Pods-FSPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20FA0D042884F4720031CE2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FA0D302884F4860031CE2D /* videoplayer_video.cpp in Sources */,
+				20C021CA289C0B2A0083FF51 /* SwiftUIStyle.swift in Sources */,
+				20FA0D2D2884F4860031CE2D /* condmutex.cpp in Sources */,
+				20C021C8289C0AE90083FF51 /* VideoPlayerModel.swift in Sources */,
+				20FA0D0D2884F4720031CE2D /* AppDelegate.m in Sources */,
+				20FA0D1E2884F4730031CE2D /* main.m in Sources */,
+				20FA0D312884F4860031CE2D /* videoplayer_audio.cpp in Sources */,
+				20FA0D2E2884F4860031CE2D /* videoplayer.cpp in Sources */,
+				20C021C5289C0AE90083FF51 /* OCPlayerManager.mm in Sources */,
+				20FA0D2F2884F4860031CE2D /* decode_video.cpp in Sources */,
+				20C021C6289C0AE90083FF51 /* VideoPlayerView.swift in Sources */,
+				20C021C7289C0AE90083FF51 /* VideoPlayerBridge.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		20FA0D192884F4730031CE2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20FA0D1A2884F4730031CE2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20FA0D1F2884F4730031CE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		20FA0D202884F4730031CE2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20FA0D222884F4730031CE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D05DF613EFA35D0B57B78A8F /* Pods-FSPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WY5VG4HG7Z;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FSPlayer",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FSPlayer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FSPlayer",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangfangshuai.FSPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FSPlayer/FSPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20FA0D232884F4730031CE2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6A1CFF7A92B17032FC8FED /* Pods-FSPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WY5VG4HG7Z;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FSPlayer",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FSPlayer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FSPlayer",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangfangshuai.FSPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FSPlayer/FSPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20FA0D032884F4720031CE2D /* Build configuration list for PBXProject "FSPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FA0D1F2884F4730031CE2D /* Debug */,
+				20FA0D202884F4730031CE2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20FA0D212884F4730031CE2D /* Build configuration list for PBXNativeTarget "FSPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FA0D222884F4730031CE2D /* Debug */,
+				20FA0D232884F4730031CE2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20FA0D002884F4720031CE2D /* Project object */;
+}

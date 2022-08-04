@@ -1,0 +1,17 @@
+#CocoaPods
+.DS_Store
+Pods
+!Podfile
+project.xcworkspace  
+xcuserdata  
+UserInterfaceState.xcuserstate  
+project.xcworkspace/  
+xcuserdata/  
+UserInterface.xcuserstate  
+*.xcshareddata/
+*.xcscheme
+
+.swiftlint-local.yml
+
+# do not remove this:
+# ba7555ac-6da9-435d-93fc-21525221a4a4
