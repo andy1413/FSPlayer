@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:kvs="urn:aws:kinesisvideo:mpd:2019" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" type="static" availabilityStartTime="2023-02-03T09:43:20.744Z" mediaPresentationDuration="PT9.992S" minBufferTime="PT1S">
+  <Period id="0" start="PT0S" duration="PT9.992S">
+    <AdaptationSet segmentAlignment="true" mimeType="video/mp4" startWithSAP="1">
+      <SegmentTemplate media="getMP4MediaFragment_v$Number$.mp4" initialization="getMP4InitFragment_v.mp4" timescale="1000" startNumber="1">
+        <SegmentTimeline>
+          <S t="0" d="1998" kvs:ts="2023-02-03T09:43:20.744Z" kvs:fn="91343852333200092724500478531158868720688591910"/>
+          <S d="1998" kvs:ts="2023-02-03T09:43:22.743Z" kvs:fn="91343852333200092729452238688300390362442521105"/>
+          <S d="2000" kvs:ts="2023-02-03T09:43:24.742Z" kvs:fn="91343852333200092734403998845441912002766203807"/>
+          <S d="1998" kvs:ts="2023-02-03T09:43:26.742Z" kvs:fn="91343852333200092739355759002583433625796708824"/>
+          <S d="1998" kvs:ts="2023-02-03T09:43:28.741Z" kvs:fn="91343852333200092744307519159724955250898206603"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="video" bandwidth="789789" width="1920" height="1080" frameRate="20.02" codecs="avc1.4d0029" scanType="progressive"/>
+    </AdaptationSet>
+    <AdaptationSet segmentAlignment="true" mimeType="audio/mp4" startWithSAP="1">
+      <SegmentTemplate media="getMP4MediaFragment_a$Number$.mp4" initialization="getMP4InitFragment_a.mp4" timescale="1000" startNumber="1">
+        <SegmentTimeline>
+          <S t="0" d="1998" kvs:ts="2023-02-03T09:43:20.744Z" kvs:fn="91343852333200092724500478531158868720688591910"/>
+          <S d="1998" kvs:ts="2023-02-03T09:43:22.743Z" kvs:fn="91343852333200092729452238688300390362442521105"/>
+          <S d="2000" kvs:ts="2023-02-03T09:43:24.742Z" kvs:fn="91343852333200092734403998845441912002766203807"/>
+          <S d="1998" kvs:ts="2023-02-03T09:43:26.742Z" kvs:fn="91343852333200092739355759002583433625796708824"/>
+          <S d="1998" kvs:ts="2023-02-03T09:43:28.741Z" kvs:fn="91343852333200092744307519159724955250898206603"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="audio" bandwidth="127936" audioSamplingRate="8000" codecs="alaw">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011"/>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
